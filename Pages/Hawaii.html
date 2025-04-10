@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Hawaii</title>
+</head>
+
+<body class="bg-white font-family-karla">
+
+    <!-- Top Bar Nav -->
+    <nav class="w-full py-4 bg-teal-500 shadow">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
+            <ul class="flex items-center font-bold text-sm text-white uppercase no-underline">
+                <li><a class="hover:text-gray-200 hover:underline px-2" href="../index.html">Home</a></li>
+            </ul>
+            <ul class="flex items-center font-bold text-sm text-white uppercase no-underline">
+                <li><a class="hover:text-gray-200 hover:underline px-2" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Text Header -->
+    <header class="w-full container mx-auto">
+        <div class="flex flex-col items-center py-12">
+            <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl">
+                Travel Bug
+            </a>
+
+            <!-- Image Row -->
+            <div class="flex items-center justify-center gap-3 mt-3">
+                <img src="https://img.freepik.com/free-vector/red-ladybug-isolated-white-background_1308-73821.jpg?t=st=1744278151~exp=1744281751~hmac=2a961557918f2b0aa19b847693c398251a64e309f55af531766610e0bcb61755&w=1380"
+                    alt="Ladybug Logo" class="max-w-[60px] max-h-[60px] object-contain">
+                <img src="https://img.freepik.com/free-vector/planet-earth_1308-82523.jpg?t=st=1744278632~exp=1744282232~hmac=979d6d666d9daf8fc5edbc7b86c8f0607ebc329179fdb090f022187fc48a1092&w=1380"
+                    alt="Earth Logo" class="max-w-[80px] max-h-[80px] object-contain spin-on-load">
+            </div>
+        </div>
+    </header>
+    <!-- Topic Nav -->
+    <nav class="w-full py-4 border-t border-b bg-gray-100" x-data="{ open: false }">
+        <div class="block sm:hidden">
+            <a href="#"
+                class="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center"
+                @click="open = !open">
+                Topics <i :class="open ? 'fa-chevron-down': 'fa-chevron-up'" class="fas ml-2"></i>
+            </a>
+        </div>
+        <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
+            <div
+                class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
+                <a href="Vietnam.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Vietnam</a>
+                <a href="Australia.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Australia</a>
+                <a href="New-Zealand.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">New-Zealand</a>
+                <a href="Hawaii.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2" style="text-decoration: underline">Hawaii</a>
+                <a href="Thailand.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Thailand</a>
+                <a href="French-Alps.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">French-Alps</a>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
