@@ -1,14 +1,15 @@
-@keyframes spin-once {
+@keyframes spin-infinite {
     from {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-}
-.spin-on-load {
-    animation: spin-once 10s linear;
-}
+  }
+  
+  .spin-on-load {
+    animation: spin-infinite 10s linear infinite;
+  }
 @keyframes sweep-in-left {
     0% {
         transform: translateX(-100%);
@@ -32,5 +33,28 @@
   }
   
   .sweep-in-right {
-    animation: sweep-in-right 1s ease-out forwards;
+    animation: sweep-in-right 3s ease-out forwards;
+  }
+  @keyframes kangaroo-bounce-in {
+    0% {
+      transform: translate(-300%, 0) scale(0.8);
+      opacity: 0;
+    }
+    40% {
+      transform: translate(20%, -20%) scale(1.1);
+      opacity: 1;
+    }
+    60% {
+      transform: translate(-10%, 10%) scale(0.95);
+    }
+    80% {
+      transform: translate(5%, -5%) scale(1.02);
+    }
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+  }
+  
+  .kangaroo-bounce-in {
+    animation: kangaroo-bounce-in 3s ease-out forwards;
   }

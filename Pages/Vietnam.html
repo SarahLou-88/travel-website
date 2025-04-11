@@ -12,7 +12,8 @@
 <body class="bg-white font-family-karla">
 
     <!-- Top Bar Nav -->
-    <nav class="sticky top-0 z-10 w-full py-2 bg-orange-200/30 backdrop-blur-md shadow border-b border-white/10 text-sm">
+    <nav
+        class="sticky top-0 z-10 w-full py-2 bg-orange-200/30 backdrop-blur-md shadow border-b border-white/10 text-sm">
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
             <ul class="flex items-center font-bold text-sm text-orange-500 uppercase no-underline">
                 <li>
@@ -28,16 +29,15 @@
     </nav>
     <!-- Text Header -->
     <header class="relative w-full h-[300px]">
-        <!-- Background Image -->
-        <img src="https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Lantern Background"
-            class="absolute inset-0 w-full h-full object-cover opacity-300 pointer-events-none z-0" />
 
         <!-- Foreground Text -->
-        <div class="relative z-10 flex justify-center items-center h-full">
-            <h1 class="text-white text-5xl font-bold uppercase drop-shadow-lg">
+        <div class="relative z-10 flex flex-col items-center justify-center h-full">
+            <h1 class="text-black text-5xl font-bold uppercase drop-shadow-lg">
                 Vietnam
             </h1>
+
+            <img src="https://static.vecteezy.com/system/resources/previews/004/230/052/non_2x/vietnamese-straw-hat-free-vector.jpg"
+                alt="Vietnam hat" class="mt-4 w-[120px] h-auto object-contain sweep-in-right" />
         </div>
     </header>
     <!-- Topic Nav -->
@@ -62,74 +62,164 @@
             </div>
         </div>
     </nav>
-<!--Sections -->
-<section class="container mx-auto px-8 md:px-20">
+    <!--Sections -->
+    <section class="container mx-auto px-8 md:px-20">
 
-    <!-- Hanoi -->
-    <h2 class="text-4xl font-bold text-orange-400 border-b-2 border-orange-300 py-4 mb-12">Hanoi</h2>
+        <!-- Hanoi -->
+        <h2 class="text-4xl font-bold text-orange-400 border-b-2 border-orange-300 py-4 mb-12">Hanoi</h2>
 
-    <div class="space-y-12 mb-16">
+        <div class="space-y-12 mb-16">
 
-        <!-- the city -->
-        <div class="flex flex-col md:flex-row gap-8 items-center pt-12 pb-12">
-            <div class="w-full md:w-1/2 h-48 bg-gray-200 rounded-lg overflow-hidden">
-                <img src="https://img.freepik.com/free-photo/day-city-view_1417-1826.jpg?t=st=1744361315~exp=1744364915~hmac=d25abb5b2d97fb3fb63af50825931d1b48a02391b9b58e0a965522bbbfdde4fc&w=1800"
-                    alt="Hanoi City" class="w-full h-full object-cover" />
-            </div>
-            <div class="w-full md:w-1/2 flex justify-center items-center text-center">
-                <p>
-                    Hanoi is Vietnam’s vibrant capital, known for its bustling Old Quarter, rich history, and
-                    amazing street food.
-                    I spent two incredible years here teaching English — the city's energy is something you have to
-                    experience to truly understand.
-                </p>
-            </div>
-        </div>
-        <div class="border-b-2 border-orange-300 w-full"></div>
-
-        <!-- Mum and Dad visit -->
-        <div class="flex flex-col md:flex-row-reverse gap-8 items-center pt-12 pb-12">
-            <div class="w-full md:w-1/2 flex justify-center gap-6">
-                <!-- Mum and Dad image -->
-                <div class="h-[300px] w-[200px] bg-gray-200 rounded-full overflow-hidden shadow-md">
-                    <img src="../images/vietnam-mum-dad.jpg" alt="Vietnam with Mum and Dad"
-                        class="w-full scale-150 h-full object-cover" />
+            <!-- the city -->
+            <div class="flex flex-col md:flex-row gap-8 items-center pt-12 pb-12">
+                <div class="w-full md:w-1/2 h-48 bg-gray-200 rounded-lg overflow-hidden">
+                    <img src="https://img.freepik.com/free-photo/day-city-view_1417-1826.jpg?t=st=1744361315~exp=1744364915~hmac=d25abb5b2d97fb3fb63af50825931d1b48a02391b9b58e0a965522bbbfdde4fc&w=1800"
+                        alt="Hanoi City" class="w-full h-full object-cover" />
                 </div>
-                <!-- Me and Dad image -->
-                <div class="h-[300px] w-[200px] bg-gray-200 rounded-full overflow-hidden shadow-md">
-                    <img src="../images/Vietnam-goodmorning.jpg" alt="Me and Dad"
-                        class="w-full scale-100 h-full object-cover" />
+                <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+                    <p>
+                        Hanoi is Vietnam’s vibrant capital, known for its bustling Old Quarter, rich history, and
+                        amazing street food.
+                        I spent two incredible years here teaching English — the city's energy is something you have to
+                        experience to truly understand.
+                    </p>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 flex justify-center items-center text-center">
-                <p class="font-[Quicksand] text-orange-600 text-3xl md:text-3xl leading-snug -rotate-6">
-                    Mum and Dad came to visit
-                </p>
-            </div>
-        </div>
-        <div class="border-b-2 border-orange-300 w-full"></div>
+            <div class="border-b-2 border-orange-300 w-full"></div>
 
-        <!-- Adopted Vinnie -->
-        <div class="flex flex-col md:flex-row gap-8 items-center pt-12 pb-12">
-            <div class="w-full md:w-1/2 flex justify-center">
-                <div class="h-[300px] w-[300px] bg-gray-200 rounded-2xl overflow-hidden shadow-md">
-                    <img src="../images/vietnam-vinnie.jpg" alt="Vinnie in Vietnam"
-                        class="w-full h-full object-cover" />
+            <!-- Mum and Dad visit -->
+            <div class="flex flex-col md:flex-row-reverse gap-8 items-center pt-12 pb-12">
+                <div class="w-full md:w-1/2 flex justify-center gap-6">
+                    <!-- Mum and Dad image -->
+                    <div class="h-[300px] w-[200px] bg-gray-200 rounded-full overflow-hidden shadow-md">
+                        <img src="../images/vietnam-mum-dad.jpg" alt="Vietnam with Mum and Dad"
+                            class="w-full scale-150 h-full object-cover" />
+                    </div>
+                    <!-- Me and Dad image -->
+                    <div class="h-[300px] w-[200px] bg-gray-200 rounded-full overflow-hidden shadow-md">
+                        <img src="../images/Vietnam-goodmorning.jpg" alt="Me and Dad"
+                            class="w-full scale-100 h-full object-cover" />
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+                    <p class="font-[Quicksand] text-orange-600 text-3xl md:text-3xl leading-snug -rotate-6">
+                        Mum and Dad came to visit
+                    </p>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 flex justify-center items-center text-center">
-                <p class="font-[Quicksand] text-gray-800 text-lg leading-relaxed">
-                    I rescued Vinnie from meat markets, giving him a second chance at life. He spent over a year by
-                    my side, safe and adored, and now he’s thriving with a family in Hanoi, living a happy little
-                    life.
-                </p>
+            <div class="border-b-2 border-orange-300 w-full"></div>
+
+            <!-- Adopted Vinnie -->
+            <div class="flex flex-col md:flex-row gap-8 items-center pt-12 pb-12">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="h-[300px] w-[300px] bg-gray-200 rounded-2xl overflow-hidden shadow-md">
+                        <img src="../images/vietnam-vinnie.jpg" alt="Vinnie in Vietnam"
+                            class="w-full h-full object-cover" />
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+                    <p class="font-[Quicksand] text-gray-800 text-lg leading-relaxed">
+                        I rescued Vinnie from meat markets, giving him a second chance at life. He spent over a year by
+                        my side, safe and adored, and now he’s thriving with a family in Hanoi, living a happy little
+                        life.
+                    </p>
+                </div>
+            </div>
+            <div class="border-b-2 border-orange-300 w-full"></div>
+        </div>
+        <!-- gallery -->
+        <h2 class="text-4xl font-bold text-black border-b-2 border-yellow-500 py-4 mb-12">Gallery</h2>
+        <div class="relative w-full max-w-xl mx-auto overflow-hidden rounded-lg shadow-lg">
+
+            <!-- Slides -->
+            <div id="slideshow" class="flex transition-transform duration-700 ease-in-out">
+                <img src="../images/hawaii-G1.jpg" alt="Slide 1"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G2.jpg" alt="Slide 2"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G3.jpg" alt="Slide 3"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G4.jpg" alt="Slide 4"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G5.jpg" alt="Slide 5"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G6.jpg" alt="Slide 6"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G7.jpg" alt="Slide 7"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G8.jpg" alt="Slide 8"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G9.jpg" alt="Slide 9"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G10.jpg" alt="Slide 9"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G10.1.jpg" alt="Slide 9"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G11.jpg" alt="Slide 9"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G12.jpg" alt="Slide 9"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G13.jpg" alt="Slide 9"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="../images/Hawaii-G14.jpg" alt="Slide 9"
+                    class="w-full flex-shrink-0 object-contain max-h-[500px]" />
             </div>
         </div>
-        <div class="border-b-2 border-orange-300 w-full"></div>
 
-    </div>
+        <script>
+            const slideshow = document.getElementById("slideshow");
+            const totalSlides = slideshow.children.length;
+            let currentSlide = 0;
 
-</section>
+            function showNextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                slideshow.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+
+            setInterval(showNextSlide, 2000);
+        </script>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-orange-400 text-white pt-10 pb-6 mt-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-center md:text-left">
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 uppercase tracking-widest">Quick Links</h3>
+                    <ul class="space-y-2 text-sm text-white">
+                        <li><a href="index.html" class="hover:underline">Home</a></li>
+                        <li><a href="#popular" class="hover:underline">Popular Destinations</a></li>
+                        <li><a href="index.html" class="hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Socials -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 uppercase tracking-widest">Follow Me</h3>
+                    <div class="flex justify-center md:justify-start gap-4 text-2xl">
+                        <a href="#" class="text-pink-500 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-600 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-red-600 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+
+                    <!-- Travel Tip -->
+                    <div class="mt-6 text-sm italic text-white">
+                        ✈️ Travel Tip: Collect moments, not things.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+
+            <!-- Bottom -->
+            <div class="text-center text-sm text-gray-400">
+                &copy; 2025 Travel Bug by Sarah. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    </section>
 </body>
 
 </html>
