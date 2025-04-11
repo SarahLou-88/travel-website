@@ -12,32 +12,36 @@
 <body class="bg-white font-family-karla">
 
     <!-- Top Bar Nav -->
-    <nav class="w-full py-4 bg-teal-500 shadow">
+    <nav class="sticky top-0 z-50 w-full py-4 bg-orange-200/30 backdrop-blur-md shadow border-b border-white/10">
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
-            <ul class="flex items-center font-bold text-sm text-white uppercase no-underline">
-                <li><a class="hover:text-gray-200 hover:underline px-2" href="../index.html">Home</a></li>
+            <ul class="flex items-center font-bold text-sm text-orange-500 uppercase no-underline">
+                <li>
+                    <a class="hover:text-orange-300 hover:underline px-2" href="../index.html">Home</a>
+                </li>
             </ul>
-            <ul class="flex items-center font-bold text-sm text-white uppercase no-underline">
-                <li><a class="hover:text-gray-200 hover:underline px-2" href="contact.html">Contact</a></li>
+            <ul class="flex items-center font-bold text-sm text-orange-500 uppercase no-underline">
+                <li>
+                    <a class="hover:text-orange-300 hover:underline px-2" href="contact.html">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
     <!-- Text Header -->
-    <header class="w-full container mx-auto">
-        <div class="flex flex-col items-center py-12">
-            <a class="font-bold text-gray-800 uppercase hover:text-gray-700 text-5xl">
-                Vietnam
-            </a>
+    <header class="relative w-full h-[400px]">
+        <!-- Background Image -->
+        <img src="https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Vietnam Background"
+            class="absolute inset-0 w-full h-full object-cover opacity-300 pointer-events-none z-0" />
 
-            <!-- Image Row -->
-            <div class="flex items-center justify-center gap-3 mt-3">
-                <img src="https://img.freepik.com/free-vector/vietnam-flag-with-peace-hand_1308-117170.jpg?t=st=1744288779~exp=1744292379~hmac=41fddfbd818daa53e29bc884d94ca657df08c160d5c484ce2ac8b46dcce3cd69&w=1380"
-                    alt="Vietnam Flag" class="max-w-[80px] max-h-[80px] object-contain sweep-in-far-left">
-            </div>
+        <!-- Foreground Text -->
+        <div class="relative z-10 flex justify-center items-center h-full">
+            <h1 class="text-white text-5xl font-bold uppercase drop-shadow-lg">
+                Vietnam
+            </h1>
         </div>
     </header>
     <!-- Topic Nav -->
-    <nav class="w-full py-4 border-t border-b bg-gray-100" x-data="{ open: false }">
+    <nav class="sticky top-16 z-40 w-full py-4 border-t border-b bg-gray-100" x-data="{ open: false }">
         <div class="block sm:hidden">
             <a href="#"
                 class="block md:hidden text-base font-bold uppercase text-center flex justify-center items-center"
@@ -48,7 +52,8 @@
         <div :class="open ? 'block': 'hidden'" class="w-full flex-grow sm:flex sm:items-center sm:w-auto">
             <div
                 class="w-full container mx-auto flex flex-col sm:flex-row items-center justify-center text-sm font-bold uppercase mt-0 px-6 py-2">
-                <a href="Vietnam.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2" style="text-decoration: underline">Vietnam</a>
+                <a href="Vietnam.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2"
+                    style="text-decoration: underline">Vietnam</a>
                 <a href="Australia.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Australia</a>
                 <a href="New-Zealand.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">New-Zealand</a>
                 <a href="Hawaii.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Hawaii</a>
@@ -57,6 +62,74 @@
             </div>
         </div>
     </nav>
+<!-- City Sections -->
+<section class="container mx-auto px-8 md:px-20">
+
+    <!-- Hanoi -->
+    <h2 class="text-4xl font-bold text-orange-400 border-b-2 border-orange-300 py-4 mb-12">Hanoi</h2>
+
+    <div class="space-y-12 mb-16">
+
+        <!-- Thing 1 (Normal) -->
+        <div class="flex flex-col md:flex-row gap-8 items-center pt-12 pb-12">
+            <div class="w-full md:w-1/2 h-48 bg-gray-200 rounded-lg overflow-hidden">
+                <img src="https://img.freepik.com/free-photo/day-city-view_1417-1826.jpg?t=st=1744361315~exp=1744364915~hmac=d25abb5b2d97fb3fb63af50825931d1b48a02391b9b58e0a965522bbbfdde4fc&w=1800"
+                    alt="Description of image" class="w-full h-full object-cover" />
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+                <p>
+                    Hanoi is Vietnam’s vibrant capital, known for its bustling Old Quarter, rich history, and
+                    amazing street food.
+                    I spent two incredible years here teaching English — the city's energy is something you have to
+                    experience to truly understand.
+                </p>
+            </div>
+        </div>
+        <div class="border-b-2 border-orange-300 w-full"></div>
+
+        <!-- Mum and Dad visit -->
+        <div class="flex flex-col md:flex-row-reverse gap-8 items-center pt-12 pb-12">
+            <div class="w-full md:w-1/2 flex justify-center gap-6">
+                <!-- Mum and Dad image -->
+                <div class="h-[300px] w-[200px] bg-gray-200 rounded-full overflow-hidden shadow-md">
+                    <img src="../images/vietnam-mum-dad.jpg" alt="Vietnam with Mum and Dad"
+                        class="w-full scale-150 h-full object-cover" />
+                </div>
+                <!-- Me and Dad image -->
+                <div class="h-[300px] w-[200px] bg-gray-200 rounded-full overflow-hidden shadow-md">
+                    <img src="../images/Vietnam-goodmorning.jpg" alt="Me and Dad"
+                        class="w-full scale-100 h-full object-cover" />
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+                <p class="font-[Quicksand] text-orange-600 text-3xl md:text-3xl leading-snug -rotate-6">
+                    Mum and Dad came to visit
+                </p>
+            </div>
+        </div>
+        <div class="border-b-2 border-orange-300 w-full"></div>
+
+        <!-- Adopted Vinnie -->
+        <div class="flex flex-col md:flex-row gap-8 items-center pt-12 pb-12">
+            <div class="w-full md:w-1/2 flex justify-center">
+                <div class="h-[300px] w-[300px] bg-gray-200 rounded-2xl overflow-hidden shadow-md">
+                    <img src="../images/vietnam-vinnie.jpg" alt="Vinnie in Vietnam"
+                        class="w-full h-full object-cover" />
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+                <p class="font-[Quicksand] text-gray-800 text-lg leading-relaxed">
+                    I rescued Vinnie from meat markets, giving him a second chance at life. He spent over a year by
+                    my side, safe and adored, and now he’s thriving with a family in Hanoi, living a happy little
+                    life.
+                </p>
+            </div>
+        </div>
+        <div class="border-b-2 border-orange-300 w-full"></div>
+
+    </div>
+
+</section>
 </body>
 
 </html>
