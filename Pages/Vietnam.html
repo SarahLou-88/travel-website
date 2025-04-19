@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Vietnam</title>
 </head>
@@ -12,7 +13,8 @@
 <body class="bg-white font-family-karla">
 
     <!-- Top Bar Nav -->
-    <nav class="sticky top-0 z-10 w-full py-2 bg-orange-200/30 backdrop-blur-md shadow border-b border-white/10 text-sm">
+    <nav
+        class="sticky top-0 z-10 w-full py-2 bg-orange-200/30 backdrop-blur-md shadow border-b border-white/10 text-sm">
         <div class="w-full container mx-auto flex flex-wrap items-center justify-between">
             <ul class="flex items-center font-bold text-sm text-orange-500 uppercase no-underline">
                 <li>
@@ -28,16 +30,15 @@
     </nav>
     <!-- Text Header -->
     <header class="relative w-full h-[300px]">
-        <!-- Background Image -->
-        <img src="https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Lantern Background"
-            class="absolute inset-0 w-full h-full object-cover opacity-300 pointer-events-none z-0" />
 
         <!-- Foreground Text -->
-        <div class="relative z-10 flex justify-center items-center h-full">
-            <h1 class="text-white text-5xl font-bold uppercase drop-shadow-lg">
+        <div class="relative z-10 flex flex-col items-center justify-center h-full">
+            <h1 class="text-black text-5xl font-bold uppercase drop-shadow-lg">
                 Vietnam
             </h1>
+
+            <img src="https://static.vecteezy.com/system/resources/previews/004/230/052/non_2x/vietnamese-straw-hat-free-vector.jpg"
+                alt="Vietnam hat" class="mt-4 w-[120px] h-auto object-contain sweep-in-right" />
         </div>
     </header>
     <!-- Topic Nav -->
@@ -57,79 +58,166 @@
                 <a href="Australia.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Australia</a>
                 <a href="New-Zealand.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">New-Zealand</a>
                 <a href="Hawaii.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Hawaii</a>
-                <a href="Thailand.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">Thailand</a>
-                <a href="French-Alps.html" class="hover:bg-gray-400 rounded py-2 px-4 mx-2">French-Alps</a>
             </div>
         </div>
     </nav>
-<!--Sections -->
-<section class="container mx-auto px-8 md:px-20">
+    <!--Sections -->
+    <section class="container mx-auto px-8 md:px-20">
 
-    <!-- Hanoi -->
-    <h2 class="text-4xl font-bold text-orange-400 border-b-2 border-orange-300 py-4 mb-12">Hanoi</h2>
+        <!-- Hanoi -->
+        <h2 class="text-4xl font-bold text-orange-400 border-b-2 border-orange-300 py-4 mb-12">Hanoi</h2>
 
-    <div class="space-y-12 mb-16">
+        <div class="space-y-12 mb-16">
 
-        <!-- the city -->
-        <div class="flex flex-col md:flex-row gap-8 items-center pt-12 pb-12">
-            <div class="w-full md:w-1/2 h-48 bg-gray-200 rounded-lg overflow-hidden">
-                <img src="https://img.freepik.com/free-photo/day-city-view_1417-1826.jpg?t=st=1744361315~exp=1744364915~hmac=d25abb5b2d97fb3fb63af50825931d1b48a02391b9b58e0a965522bbbfdde4fc&w=1800"
-                    alt="Hanoi City" class="w-full h-full object-cover" />
-            </div>
-            <div class="w-full md:w-1/2 flex justify-center items-center text-center">
-                <p>
-                    Hanoi is Vietnam’s vibrant capital, known for its bustling Old Quarter, rich history, and
-                    amazing street food.
-                    I spent two incredible years here teaching English — the city's energy is something you have to
-                    experience to truly understand.
-                </p>
-            </div>
-        </div>
-        <div class="border-b-2 border-orange-300 w-full"></div>
-
-        <!-- Mum and Dad visit -->
-        <div class="flex flex-col md:flex-row-reverse gap-8 items-center pt-12 pb-12">
-            <div class="w-full md:w-1/2 flex justify-center gap-6">
-                <!-- Mum and Dad image -->
-                <div class="h-[300px] w-[200px] bg-gray-200 rounded-full overflow-hidden shadow-md">
-                    <img src="../images/vietnam-mum-dad.jpg" alt="Vietnam with Mum and Dad"
-                        class="w-full scale-150 h-full object-cover" />
+            <!-- the city -->
+            <div class="flex flex-col md:flex-row gap-8 items-center pt-12 pb-12">
+                <div class="w-full md:w-1/2 h-48 bg-gray-200 rounded-lg overflow-hidden">
+                    <img src="https://img.freepik.com/free-photo/day-city-view_1417-1826.jpg?t=st=1744361315~exp=1744364915~hmac=d25abb5b2d97fb3fb63af50825931d1b48a02391b9b58e0a965522bbbfdde4fc&w=1800"
+                        alt="Hanoi City" class="w-full h-full object-cover" />
                 </div>
-                <!-- Me and Dad image -->
-                <div class="h-[300px] w-[200px] bg-gray-200 rounded-full overflow-hidden shadow-md">
-                    <img src="../images/Vietnam-goodmorning.jpg" alt="Me and Dad"
-                        class="w-full scale-100 h-full object-cover" />
+                <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+                    <p>
+                        Hanoi is Vietnam’s vibrant capital, known for its bustling Old Quarter, rich history, and
+                        amazing street food.
+                        I spent two incredible years here teaching English — the city's energy is something you have to
+                        experience to truly understand.
+                    </p>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 flex justify-center items-center text-center">
-                <p class="font-[Quicksand] text-orange-600 text-3xl md:text-3xl leading-snug -rotate-6">
-                    Mum and Dad came to visit
-                </p>
-            </div>
-        </div>
-        <div class="border-b-2 border-orange-300 w-full"></div>
+            <div class="border-b-2 border-orange-300 w-full"></div>
 
-        <!-- Adopted Vinnie -->
-        <div class="flex flex-col md:flex-row gap-8 items-center pt-12 pb-12">
-            <div class="w-full md:w-1/2 flex justify-center">
-                <div class="h-[300px] w-[300px] bg-gray-200 rounded-2xl overflow-hidden shadow-md">
-                    <img src="../images/vietnam-vinnie.jpg" alt="Vinnie in Vietnam"
-                        class="w-full h-full object-cover" />
+            <!-- Mum and Dad visit -->
+            <div class="flex flex-col md:flex-row-reverse gap-8 items-center pt-12 pb-12">
+                <div class="w-full md:w-1/2 flex justify-center gap-6">
+                    <!-- Mum and Dad image -->
+                    <div class="h-[300px] w-[200px] bg-gray-200 rounded-full overflow-hidden shadow-md">
+                        <img src="../images/vietnam-mum-dad.jpg" alt="Vietnam with Mum and Dad"
+                            class="w-full scale-150 h-full object-cover" />
+                    </div>
+                    <!-- Me and Dad image -->
+                    <div class="h-[300px] w-[200px] bg-gray-200 rounded-full overflow-hidden shadow-md">
+                        <img src="../images/Vietnam-goodmorning.jpg" alt="Me and Dad"
+                            class="w-full scale-100 h-full object-cover" />
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+                    <p class="font-[Quicksand] text-orange-600 text-3xl md:text-3xl leading-snug -rotate-6">
+                        Mum and Dad came to visit
+                    </p>
                 </div>
             </div>
-            <div class="w-full md:w-1/2 flex justify-center items-center text-center">
-                <p class="font-[Quicksand] text-gray-800 text-lg leading-relaxed">
-                    I rescued Vinnie from meat markets, giving him a second chance at life. He spent over a year by
-                    my side, safe and adored, and now he’s thriving with a family in Hanoi, living a happy little
-                    life.
-                </p>
+            <div class="border-b-2 border-orange-300 w-full"></div>
+
+            <!-- Adopted Vinnie -->
+            <div class="flex flex-col md:flex-row gap-8 items-center pt-12 pb-12">
+                <div class="w-full md:w-1/2 flex justify-center">
+                    <div class="h-[300px] w-[300px] bg-gray-200 rounded-2xl overflow-hidden shadow-md">
+                        <img src="../images/vietnam-vinnie.jpg" alt="Vinnie in Vietnam"
+                            class="w-full h-full object-cover" />
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex justify-center items-center text-center">
+                    <p class="font-[Quicksand] text-gray-800 text-lg leading-relaxed">
+                        I rescued Vinnie from meat markets, giving him a second chance at life. He spent over a year by
+                        my side, safe and adored, and now he’s thriving with a family in Hanoi, living a happy little
+                        life.
+                    </p>
+                </div>
+            </div>
+            <div class="border-b-2 border-orange-300 w-full"></div>
+        </div>
+        <!-- gallery -->
+        <h2 class="text-4xl font-bold text-black border-b-2 border-yellow-500 py-4 mb-12"
+            style="font-family: 'Great Vibes', cursive;">
+            Gallery
+        </h2>
+        <div class="relative w-full max-w-xl mx-auto overflow-hidden rounded-lg shadow-lg">
+
+            <!-- Slides -->
+            <div id="slideshow" class="flex transition-transform duration-700 ease-in-out">
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/468360194_10160279715011751_4513949355233074408_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=f727a1&_nc_ohc=DI0mLTlTDfEQ7kNvwFyvy-v&_nc_oc=AdlTlxJA-hhMJdpKzTv6mvaD-PUjUTvtJalo6mR8umVYjtUc0fPLxxP7NYJ7DSzbVGs&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=Kuu0soPiEtk1YbkTmWzZgA&oh=00_AfEF834lcXq2TOF2vqFZJaquqjln4jd3D2IR6YC-McS5lA&oe=68029095"
+                    alt="Slide 1" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/468297335_10160276903266751_530841308338941582_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=x1J_KgNKOxwQ7kNvwH1RXHa&_nc_oc=AdlC-JzrY2DWOKPIZHFklOfBrj8Eun0iz2kH4eK5S9YIP1Bl2A4kJxgRewOm1N4O-2s&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=kvCLA1LtLXM6SEaz3ysVGQ&oh=00_AfFdZ6zTxX1uCr6NQdTBGmfSl82st-uKCLGztGhJZiKv_g&oe=68027ACF"
+                    alt="Slide 2" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/468504434_10160358868471751_3810352246818911803_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=127cfc&_nc_ohc=azj_rBP2sKgQ7kNvwG2gfK4&_nc_oc=AdkMItqSqP2XnTzvUFC1D6ddUxH0l4FWOBAKrRGkiy3J2qgl_2eH8a9_n5X0v2ee3sA&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=3zxhwd4eg6YNMrDBC0Re1A&oh=00_AfEg5g8WuWncuQbMk3aX29_ZG8I0L7uNzdFWpiywTyusDQ&oe=680295C6"
+                    alt="Slide 3" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/468309169_10160279715021751_3682269910828318089_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=f727a1&_nc_ohc=TqXsg8V9CtsQ7kNvwGIngmk&_nc_oc=AdkZYKmaEv5Uj2plxUUWjElbFrjObo18wztQrUrUz3CeZuOcotHTv0fQo7AsAQWP9O4&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=iTwqUbdTG8goRfOU8Akesw&oh=00_AfG-PRffXXWsMSMa-nDm9O-udhjtBtvJvD915cNXRdo65g&oe=68027F07"
+                    alt="Slide 4" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/468326429_10160279714986751_3294686948095278993_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=f727a1&_nc_ohc=nfU7TZxaT84Q7kNvwFQUMch&_nc_oc=Adm9T8JxiFqidGWogHCnS-biFY_smGtq-StFHtqAlhtiS0YKAMQIU5ovHIxooiZ4gwM&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=p8oyl1N-uBJ0Pb-rO1IhRQ&oh=00_AfGvgcws5chJo2k2QGwu3S6KJnjgE8N3SciZRGkO_oDtMw&oe=68027BA0"
+                    alt="Slide 5" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/468468416_10160279715031751_4045378743646046209_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=f727a1&_nc_ohc=-qu0AG90BRYQ7kNvwF5vwRt&_nc_oc=AdmPrF5IUfav1solmI3j_PVdYms3JjutsqXAgDItU3Wy6A1PixteYX4zQJcnwRcyozs&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=RLj8IYVKSR5ct9X_l1fqLg&oh=00_AfFYp__dU_evZ7XbTCzS14MYu3GmScn5Hq2jf4TTPBG1ew&oe=68027185"
+                    alt="Slide 6" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/468280339_10160279715016751_804124398652498554_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=f727a1&_nc_ohc=cy6UqC3wIZYQ7kNvwEpOziB&_nc_oc=AdknEu3WsATwZfevJqL3CaWaNA0zaR7yuLRiPjn0B_HvRaqsbso9zsAPFUyi2h_qFxg&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=1RTktA9u5EGYU9BjsUiYIw&oh=00_AfEKPNLU8VbglBRkDtzHBJ_6K7cXhHYHH_W_7D5bfJNwvQ&oe=680282EF"
+                    alt="Slide 7" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/468317181_10160276904616751_7137549223885340717_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=833d8c&_nc_ohc=LcapGxhwMFsQ7kNvwFkUO2l&_nc_oc=Admtl7vq06hZFb466lPug1t1IkisbBcXmXI8qb8Ztsq_ZEqv2RfeLo1XWShJc3H-Pws&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=NubpQB5CiR9EtD-SQhYSjw&oh=00_AfGpUyjS9Kzbxmvj27_z8GuG59C8nqueTB0kFdfUtvyGuw&oe=680294DE"
+                    alt="Slide 8" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/468297693_10160276904626751_4802514476395157495_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=833d8c&_nc_ohc=4vN--wjFob4Q7kNvwG7S-D2&_nc_oc=Adnoxo5mXZwq1zh6TxR2s4S-8JRNtjMFTcWj5r059w2SxUGpn9ACPjyYY1AccgGfLJg&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=Pf1oCSe4C5N-piH5g3nh9g&oh=00_AfHRbzUq6KHJLk9XsK0c5FQXCVzo1pEuRYUkQMWKdEp5Mg&oe=68029A4F"
+                    alt="Slide 9" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/468457303_10160276904606751_5203585282082707327_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_ohc=1RAZkdqMHWsQ7kNvwHyKAt5&_nc_oc=Adm4RgOO0cVUoO2qqaXciitQy73NZqE8jG9RQpZzf79qEIlLgmVUjQtisLUF4XIvWR4&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=-7YRAn5re7h6Bg2yJyVYkA&oh=00_AfGp5F5iFYo31v4yAxtgzX45CZNDNBTSy_sCzv8Q-HB8IQ&oe=68029568"
+                    alt="Slide 9" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/468298120_10160276904061751_1494485869133392525_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=hsrlCTd0D24Q7kNvwEic9qp&_nc_oc=Adm-HI41VxH6OAc7Uf768zk9xOOzBw80XKLDBLQ_26r2095g7ct5_qqCq8WqKuQoGnc&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=qYkrknb-iaeEe8-sXPiWGg&oh=00_AfEoR3AEwBDCIIvTQpdFl5hvssP03nFW5Jq65YL28g8Uow&oe=6802A482"
+                    alt="Slide 9" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/468308370_10160276903246751_6439844795488065020_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=c691fXSgFfcQ7kNvwGGZBSl&_nc_oc=AdklZbZMU0QuYmbsx8WuOLRNdmirLGdOREqv0zEff7CNzhihFYpX2qEGB_0nGWYw50c&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=CE30R-CtBbHEnXqqu-EijA&oh=00_AfHhSHdOEF2zv7DNqcbbzef0u_HtNp_LfToOqbcg7TzNNw&oe=68028932"
+                    alt="Slide 9" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
+                <img src="https://scontent.falc3-1.fna.fbcdn.net/v/t39.30808-6/471359688_10160482078666751_5735231195393506581_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=cf85f3&_nc_ohc=iLFr_5yBTaMQ7kNvwEnonIv&_nc_oc=AdmMDqz1yx5DVYqbVJHvTymPra4mD4Czj0KYlGpBG2YIOD0F8Y96uQunp0pGEKEUWOE&_nc_zt=23&_nc_ht=scontent.falc3-1.fna&_nc_gid=wJ-cAhF6Ro-Fjm1mRAkjiQ&oh=00_AfEy27yj1S817317UQbw0iw_NEcWXZ7TYOOriEm_LlOoIw&oe=68028545"
+                    alt="Slide 9" class="w-full flex-shrink-0 object-contain max-h-[500px]" />
             </div>
         </div>
-        <div class="border-b-2 border-orange-300 w-full"></div>
 
-    </div>
+        <script>
+            const slideshow = document.getElementById("slideshow");
+            const totalSlides = slideshow.children.length;
+            let currentSlide = 0;
 
-</section>
+            function showNextSlide() {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                slideshow.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+
+            setInterval(showNextSlide, 2000);
+        </script>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-orange-400 text-white pt-10 pb-6 mt-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-center md:text-left">
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 uppercase tracking-widest">Quick Links</h3>
+                    <ul class="space-y-2 text-sm text-white">
+                        <li><a href="index.html" class="hover:underline">Home</a></li>
+                        <li><a href="#popular" class="hover:underline">Popular Destinations</a></li>
+                        <li><a href="index.html" class="hover:underline">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Socials -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 uppercase tracking-widest">Follow Me</h3>
+                    <div class="flex justify-center md:justify-start gap-4 text-2xl">
+                        <a href="#" class="text-pink-500 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-blue-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-blue-600 hover:text-white"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-red-600 hover:text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+
+                    <!-- Travel Tip -->
+                    <div class="mt-6 text-sm italic text-white">
+                        ✈️ Travel Tip: Collect moments, not things.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+
+            <!-- Bottom -->
+            <div class="text-center text-sm text-gray-400">
+                &copy; 2025 Travel Bug by Sarah. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    </section>
 </body>
 
 </html>

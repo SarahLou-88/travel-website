@@ -31,6 +31,23 @@
     }
   }
   
-  .sweep-in-right {
-    animation: sweep-in-right 1s ease-out forwards;
+  @keyframes bounceInLeft {
+    0% {
+      transform: translateX(-1000px);
+      opacity: 0;
+    }
+    60% {
+      transform: translateX(30px);
+      opacity: 1;
+    }
+    80% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .kangaroo-bounce-in {
+    animation: bounceInLeft 2s ease-out;
   }
